@@ -254,7 +254,7 @@ h1,h2,h3,h4{font-family:'Raleway',sans-serif;line-height:1.2}
 .nav-cta:hover{background:var(--teal-dk);transform:translateY(-1px)}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
 .hamburger span{display:block;width:24px;height:2px;background:var(--dark);transition:transform .3s,opacity .3s}
-.mobile-menu{position:fixed;inset:0;background:var(--nav-bg);z-index:99;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mobile-menu{position:fixed;inset:0;background:var(--nav-bg);z-index:99;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:28px;padding:100px 20px 40px;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .3s}
 .mobile-menu.open{opacity:1;pointer-events:all}
 .mobile-menu a{font-family:'Raleway',sans-serif;font-size:28px;font-weight:700;font-style:italic;color:var(--dark)}
 .mobile-menu .mobile-social{display:flex;gap:20px;margin-top:20px}
@@ -549,7 +549,7 @@ h1,h2,h3,h4{font-family:'Raleway',sans-serif;line-height:1.2}
 
 <!-- ═══════════ NAV ═══════════ -->
 <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-  <a href="#home" class="nav-logo" aria-label="With Heart Marketing home">
+  <a href="/" class="nav-logo" aria-label="With Heart Marketing home">
     <img src="/logo-whm.png" alt="With Heart Marketing" loading="eager">
   </a>
   <div class="nav-right">
@@ -577,7 +577,7 @@ h1,h2,h3,h4{font-family:'Raleway',sans-serif;line-height:1.2}
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#home" onclick="closeMobile()">Home</a>
+  <a href="/" onclick="closeMobile()">Home</a>
   <a href="#approach" onclick="closeMobile()">The Approach</a>
   <a href="/work-with-me/" onclick="closeMobile()">Work With Me</a>
   <a href="#cases" onclick="closeMobile()">Case Studies</a>
