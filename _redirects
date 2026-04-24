@@ -1,0 +1,18 @@
+# WithHeart Marketing, bot blocker for WordPress probe attempts
+# Site is on Netlify, not WordPress. Return 410 Gone to tell crawlers to stop asking.
+# Safe paths: /.well-known/acme-challenge/* is NOT blocked (Netlify needs it for SSL renewals).
+
+/wp-admin           /  410!
+/wp-admin/*         /  410!
+/wp-login.php       /  410!
+/wp-json            /  410!
+/wp-json/*          /  410!
+/xmlrpc.php         /  410!
+/wp-content/*       /  410!
+/wp-includes/*      /  410!
+/wp-config.php      /  410!
+/wp-cron.php        /  410!
+/well.known-/*      /  410!
+/.env               /  410!
+/phpinfo.php        /  410!
+/phpmyadmin/*       /  410!
